@@ -1,0 +1,2 @@
+## `vendors/`
+contains 3rd-party styles, mixins, etc.

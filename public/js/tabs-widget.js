@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".tab-header .item").on("click",function(){var t=$(this).data("tab");$(".tab-header .item").removeClass("active"),$(this).addClass("active"),$(".tab-contents .item").hide(),$('div[data-content="'+t+'"]').fadeIn("300")})});

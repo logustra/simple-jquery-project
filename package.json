@@ -1,0 +1,19 @@
+{
+  "name": "Sass With Gulp Simple Starter",
+  "description": "Simple Starter",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Logustra/sassWithGulpSimpleStarter.git"
+  },
+  "author": "Faizal Andyka",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2",
+    "gulp-uglify": "^2.0.0",
+    "pump": "^1.0.1",
+    "gulp-sourcemaps": "^1.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "browser-sync": "^2.18.2"
+  }
+}

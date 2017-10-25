@@ -1,0 +1,58 @@
+* {
+    font-family: $font1;
+
+    &:focus {
+        outline: none !important;
+    }
+}
+
+body {
+    background: $smoke;
+}
+
+.btn-success {
+    background: $green;
+    border: 0;
+    border-radius: 50px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 10px 35px;
+    transition: .5s;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+
+    &:hover,
+    &:focus {
+        background: $white !important;
+        color: $midnight !important;
+    }// pseudoclass
+
+    &:focus {
+        box-shadow:inset 0 3px 5px rgba(0,0,0,.125);
+    }// pseudoclass
+}// .btn-success
+
+.toolbar {
+    margin: 20px;
+
+    .btn-success {
+        margin: 0 5px;
+    }
+}// .toolbar
+
+.start {
+    // display: none;
+    width: 80%;
+    position: fixed;
+    top: 30%;
+    left: 10%;
+    text-align: center;
+
+    h1 {
+        font-weight: 300;
+        font-family: $font1;
+        letter-spacing: 4px;
+        line-height: 50px;
+        margin: 25px 0;
+        transition: .5s;
+    }// h1
+}// .start

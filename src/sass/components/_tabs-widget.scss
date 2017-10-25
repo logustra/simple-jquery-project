@@ -1,0 +1,76 @@
+.tabs-widget {
+    display: none;
+        
+    .container {
+        background: $white;
+        padding: 50px;
+        margin: 70px auto;
+        border-radius: 10px;
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+
+        h1 {
+            font-weight: 300;
+            letter-spacing: 4px;
+            text-align: center;
+            margin: 25px 0 70px 0;
+        }// h1
+    
+        .list-inline {
+            margin-left: 0;
+        }
+    
+        .tab-header {
+            border-bottom: 5px solid $green;
+            margin-bottom: 0;
+            @include clearfix;
+    
+            li {
+                margin-bottom: 7px;
+                padding: 0;
+                margin-right: 3px;
+    
+                .item.active {
+                    border: 5px solid $green;
+                    border-bottom: 0;
+                    background: $white;
+                    border-top-right-radius: 5px;
+                    border-top-left-radius: 5px;
+                    padding: 14px 15px;
+    
+                    &:hover {
+                        background: $white;
+                    }
+                }// a.active
+    
+                .item {
+                    text-decoration: none;
+                    padding: 18px 15px 9px 15px;
+                    color: $midnight;
+                    cursor: pointer;
+    
+                    &:hover {
+                        background: $smoke;
+                        border-top-right-radius: 5px;
+                        border-top-left-radius: 5px;
+                    }
+                }// a
+            }// li
+        }// .tab-header
+    
+        .tab-contents {
+            position: relative;
+            border: 5px solid $green;
+            border-top: 0;
+            padding: 15px 0 35px 15px;
+            margin-bottom: 30px;
+    
+            .item {
+                display: none;
+            }
+    
+            .item.active {
+                display: block;
+            }
+        }// .tab-contents
+    }//.container
+}// .tabs-widget

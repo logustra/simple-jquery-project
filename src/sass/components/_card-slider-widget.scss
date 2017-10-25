@@ -1,0 +1,57 @@
+.card-slider-witged {
+    display: none;
+
+    .container {
+        background: $white;
+        padding: 50px;
+        margin: 70px auto;
+        border-radius: 10px;
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+        // color: $white;
+
+        h1 {
+            font-weight: 300;
+            letter-spacing: 4px;
+            text-align: center;
+            margin: 25px 0 70px 0;
+        }// h1
+
+        .item {
+            display: none;
+
+            &:first-of-type {
+                display: block;
+            }
+
+            .col-md-9 {
+                
+                h2 {
+                    font-family: $font2;
+                    font-weight: bold;
+                    letter-spacing: 2.5px;
+                    margin-top: 0;
+                }
+
+                p {
+                    font-weight: 300;
+                    letter-spacing: 1px;
+                }// p
+            }// .columns
+        }// .item
+        
+
+        .btn-sliders {
+            padding: 30px 0 30px 280px;
+
+            .btn-success {
+                box-shadow: none;
+                margin: 0 5px;
+
+                &:hover,
+                &:focus {
+                    background: $smoke !important;
+                }// pseudoclass
+            }// .btn-success
+        }// .btn-sliders
+    }// .container
+}// .card-slider-widget

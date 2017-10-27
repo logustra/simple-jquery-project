@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Simple Jquery Project</title>
+    <link rel="shortcut icon" href="assets/public/images/logo.png" type="image/png">
+
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="public/css/bootstrap.min.css">
+
+    <!-- Style -->
+    <link rel="stylesheet" href="public/css/main.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="tabs-widget">
+
+    <main>
+        <div class="container">
+            <h1>Tabs Widget</h1>
+
+            <ul class="list-unstyled list-inline tab-header">
+                <li>
+                    <a class="item active" data-tab="1">Menu 1</a>
+                </li>
+                <li>
+                    <a class="item" data-tab="2">Menu 2</a>
+                </li>
+                <li>
+                    <a class="item" data-tab="3">Menu 3</a>
+                </li>
+            </ul>
+
+            <div class="tab-contents">
+                <div class="item active" data-content="1">
+                    <h3>Menu 1</h3>
+                    <p>Do commodo consectetur ut cillum ullamco exercitation culpa reprehenderit officia anim.</p>
+                </div>
+                <!-- content 1 -->
+
+                <div class="item" data-content="2">
+                    <h3>Menu 2</h3>
+                    <p>Do commodo consectetur ut cillum ullamco exercitation culpa reprehenderit officia anim.</p>
+                </div>
+                <!-- content 2 -->
+
+                <div class="item" data-content="3">
+                    <h3>Menu 3</h3>
+                    <p>Do commodo consectetur ut cillum ullamco exercitation culpa reprehenderit officia anim.</p>
+                </div>
+                <!-- content 3 -->
+            </div>
+            <!-- .tab-contents -->
+        </div>
+        <!-- .container -->
+    </main>
+
+    <!-- Jquery  -->
+    <script src="public/js/jquery-3.2.1.min.js"></script>
+
+    <!-- Tabs Widget  -->
+    <script src="public/js/tabs-widget.js"></script>
+</body>
+
+</html>

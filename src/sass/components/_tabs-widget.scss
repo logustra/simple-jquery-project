@@ -1,10 +1,10 @@
 .tabs-widget {
-    display: none;
+    @include bgTintedImg('../images/tabs.jpg', center center, no-repeat, cover, rgba(0, 0, 0, 0.45));
         
     .container {
         background: $white;
         padding: 50px;
-        margin: 70px auto;
+        margin: 103px auto;
         border-radius: 10px;
         box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
 

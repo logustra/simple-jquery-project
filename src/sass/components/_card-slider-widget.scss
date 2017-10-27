@@ -1,13 +1,11 @@
-.card-slider-witged {
-    display: none;
+.card-slider-widget {
 
     .container {
         background: $white;
         padding: 50px;
-        margin: 70px auto;
+        margin: 48px auto;
         border-radius: 10px;
         box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
-        // color: $white;
 
         h1 {
             font-weight: 300;
@@ -40,7 +38,7 @@
         }// .item
         
 
-        .btn-sliders {
+        .btn-card-slider {
             padding: 30px 0 30px 280px;
 
             .btn-success {

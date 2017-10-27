@@ -1,6 +1,6 @@
 $(document).ready(function () {
     
-    var itemSlide = $('.card-slider-witged .container .item').length;
+    var itemSlide = $('.card-slider-widget .container .item').length;
     var slide = 1;
 
     $('.totals-slide').text(itemSlide);
@@ -30,7 +30,7 @@ $(document).ready(function () {
     });
 
     function nextSlider (slideNumber) {
-        $('.card-slider-witged .container .item').removeClass('active');
+        $('.card-slider-widget .container .item').removeClass('active');
         $('div[data-slider="'+slideNumber+'"]').fadeIn('300').addClass('active');
         if(slideNumber !== (itemSlide + 1)) {
             $('div[data-slider="'+ (slideNumber - 1) +'"]').hide();
@@ -42,7 +42,7 @@ $(document).ready(function () {
     }
 
     function prevSlider (slideNumber) {
-        $('.card-slider-witged .container .item').removeClass('active');
+        $('.card-slider-widget .container .item').removeClass('active');
         $('div[data-slider="'+slideNumber+'"]').fadeIn('300').addClass('active');
         if(slideNumber !== 0) {
             $('div[data-slider="'+ (slideNumber + 1) +'"]').hide();
@@ -54,7 +54,7 @@ $(document).ready(function () {
     }
 
     function changeBackground () {
-        var getSlideBackground = $('.card-slider-witged.active .container .item.active').attr('data-background');
+        var getSlideBackground = $('.card-slider-widget .container .item.active').attr('data-background');
         $('body').css({
             background: getSlideBackground,
             'background-size': 'cover'

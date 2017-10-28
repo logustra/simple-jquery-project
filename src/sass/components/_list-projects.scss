@@ -21,29 +21,21 @@
                     border: 12px solid $green;
     
                     h1 {
-                        display: none;
-                    }
-    
-                    a {
-                        display: block;
+                        color: $white;
                     }
                 }// pseudoclass
     
-                h1 {
-                    font-weight: 300;
-                    letter-spacing: 4px;
-                    line-height: 50px;
-                    margin: 25px 0;
-                    transition: .5s;
-                }// h1
-                
                 a {
-                    display: none;
-    
-                    .fa {
-                        color: $white;
-                        @include font-size(40px);
-                    }// .fa
+                    text-decoration: none;
+
+                    h1 {
+                        font-weight: 300;
+                        letter-spacing: 4px;
+                        line-height: 50px;
+                        margin: 25px 0;
+                        transition: .5s;
+                        color: $midnight;
+                    }// h1
                 }// a
             }// .wrapper
         }// .columns

@@ -1,0 +1,79 @@
+.overlay-widget {
+    @include bgTintedImg('../images/overlay.jpg', center center, no-repeat, cover, rgba(0, 0, 0, 0.45));
+
+    .container {
+        background: $white;
+        padding: 50px;
+        margin: 160px auto;
+        border-radius: 10px;
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+
+        h1 {
+            font-weight: 300;
+            letter-spacing: 4px;
+            text-align: center;
+            margin: 25px 0 70px 0;
+        }// h1
+
+        .btn-overlay {
+            margin-bottom: 30px;
+
+            .btn-success {
+                margin: 0 5px;
+
+                &:hover {
+                    background: $smoke !important;
+                }
+            }// .btn-success
+        }// .btn-overlay
+    }// .container
+
+    .overlay-wrapper {
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.6);
+        position: fixed;
+        width: 100%;
+        min-height: 100%;
+        z-index: 1000;
+        display: none;
+
+        .overlay {
+            display: none;
+            
+            .overlay-dialog {
+                width: 40%;
+                background: $white;
+                border-radius: 10px;
+                margin: 50px auto 0 auto;
+                box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+    
+                .overlay-header {
+                    border-bottom: 1px solid $midnight;
+                    padding: 10px 30px;
+                    @include clearfix;
+    
+                    h3 {
+                        float: left;
+                        font-family: $font2;
+                        font-weight: bold;
+                        letter-spacing: 2px;
+                    }// h3
+    
+                    .btn-close-overlay {
+                        float: right;
+                        padding: 20px 0;
+                        cursor: pointer;
+                    }// btn-close-overlay
+                }// overlay-header
+    
+                .overlay-body {
+                    display: block;
+                    padding: 30px;
+                    font-weight: 300;
+                    letter-spacing: 1px;
+                }// .overlay-body
+            }// .overlay-dialog
+        }// .overlay
+    }// .overlay-widget
+}// .overlay-widget

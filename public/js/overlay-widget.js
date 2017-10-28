@@ -1,0 +1,1 @@
+$(document).ready(function(){function n(n){$('div[data-overlay-content="'+n+'"]').fadeIn("300",function(){$(".overlay").fadeIn("300")})}$(".btn-overlay .item").on("click",function(){n($(this).data("overlay"))}),$(".btn-close-overlay").on("click",function(){$(".overlay").fadeOut("300",function(){$(".overlay-wrapper").fadeOut("300")})})});

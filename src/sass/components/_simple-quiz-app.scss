@@ -1,0 +1,92 @@
+.simple-quiz-app {
+    @include bgTintedImg('../images/quiz.jpg', center center, no-repeat, cover, rgba(0, 0, 0, 0.45));
+    position: fixed;
+    height: 100%;
+    width: 100%;
+
+    .container {
+
+        h1 {
+            font-weight: 300;
+            letter-spacing: 4px;
+            text-align: center;
+            margin: 25px 0 70px 0;
+        }// h1
+
+        .item {
+
+            .wrapper {
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 30%;
+                background: $white;
+                margin: 0 auto;
+                text-align: center;
+                border-radius: 10px;
+                padding: 50px;
+                box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+                display: none;
+        
+
+                h1 {
+                    margin: 15px 0;
+                    @include font-size(25px);
+                    letter-spacing: 1px;
+                }// h1
+    
+                .options {
+                    width: 40%;
+                    height: 120px;
+                    margin: 0 auto;
+    
+                    p {
+                        letter-spacing: 1px;
+                        font-weight: 300;
+                        border: 2px solid transparent;
+                        padding: 2px;
+                        opacity: 0;
+                        border-radius: 50px;
+                        transition: .5s;
+                        cursor: pointer;
+    
+                        &:hover {
+                            background: $smoke;
+                        }// pseudoclass
+    
+                    }// p
+    
+                    p.active {
+                        border: 2px solid $green;
+                        border-radius: 50px;
+                    }// p.active
+                }// .options
+    
+                .btn-success {
+    
+                    &:hover,
+                    &:focus {
+                        background: $smoke !important;
+                    }
+                }// .btn-success
+            }// .wrapper
+
+            .wrapper.active {
+                display: block;
+            }
+        }// .item
+
+        .error {
+            position: fixed;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%);
+            margin-bottom: 25px;
+            color: $white;
+            font-weight: 300;
+            @include font-size(17px);
+            display: none;
+        }// .error
+    }// .container
+}// .simple-quiz-app

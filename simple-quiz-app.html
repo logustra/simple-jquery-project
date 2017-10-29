@@ -28,14 +28,99 @@
     <![endif]-->
 </head>
 
-<body class="simple-quiz-app">
+<body>
 
     <main>
-        <div class="container">
-            <h1>Simple Quiz App</h1>
-
+        <div class="simple-quiz-app">
+            <div class="container">
+                <div class="item panel-0" data-panel="0">
+                    <div class="wrapper active">
+                        <h1>SQuiz</h1>
+                        <button class="start-quiz btn btn-success text-capitalize" data-next="1">start quiz</button>
+                    </div>
+                </div>
+                <!-- .item -->
+                
+                <div class="item panel-1" data-panel="1">
+                    <div class="wrapper">
+                        <h1>How do you think about this project?</h1>
+    
+                        <div class="options">
+                            <p>Nice</p>
+                            <p>Flat</p>
+                            <p>Bad</p>
+                        </div>
+                        <!-- .options -->
+    
+                        <button class="btn btn-success btn-next text-capitalize" data-next="2">next question</button>
+                    </div>
+                </div>
+                <!-- .item -->
+    
+                <div class="item panel-2" data-panel="2">
+                    <div class="wrapper">
+                        <h1>How do you think me?</h1>
+    
+                        <div class="options">
+                            <p>Handsome</p>
+                            <p>Strange</p>
+                            <p>Ugly</p>
+                        </div>
+                        <!-- .options -->
+    
+                        <button class="btn btn-success btn-next text-capitalize" data-next="3">next question</button>
+                    </div>
+                </div>
+                <!-- .item -->
+    
+                <div class="item panel-3" data-panel="3">
+                    <div class="wrapper">
+                        <h1>What programming language do you like?</h1>
+    
+                        <div class="options">
+                            <p>Javascript</p>
+                            <p>Ruby</p>
+                            <p>PHP</p>
+                        </div>
+                        <!-- .options -->
+    
+                        <button class="btn btn-success btn-next text-capitalize" data-next="4">next question</button>
+                    </div>
+                </div>
+                <!-- .item -->
+    
+                <div class="item panel-4" data-panel="4">
+                    <div class="wrapper">
+                        <h1>How many stars will you give for this project?</h1>
+    
+                        <div class="options">
+                            <p>5 Stars</p>
+                            <p>3 Stars</p>
+                            <p>1 Star</p>
+                        </div>
+                        <!-- .options -->
+    
+                        <button class="btn btn-success btn-next text-capitalize" data-next="5">next question</button>
+                    </div>
+                </div>
+                <!-- .item -->
+    
+                <div class="item panel-5" data-panel="5">
+                    <div class="wrapper">
+                        <h1>Thank you for participating :)</h1>
+                    </div>
+                </div>
+                <!-- .item -->
+    
+                <div class="error">
+                    <p>Please make a selection</p>
+                </div>
+                <!-- .error -->
+    
+            </div>
+            <!-- .container -->
         </div>
-        <!-- .container -->
+        <!-- .simple-quiz-app -->
     </main>
 
     <!-- Jquery  -->
@@ -45,7 +130,7 @@
     <script src="public/js/jquery-ui.min.js"></script>
 
     <!-- Tabs Widget  -->
-    <script src="public/js/overlay-widget.js"></script>
+    <script src="public/js/simple-quiz-app.js"></script>
 </body>
 
 </html>

@@ -22,6 +22,8 @@
     
                     h1 {
                         color: $white;
+                        border: 2px solid $white;
+                        padding: 15px 5px;
                     }
                 }// pseudoclass
     
@@ -32,7 +34,7 @@
                         font-weight: 300;
                         letter-spacing: 4px;
                         line-height: 50px;
-                        margin: 25px 0;
+                        margin: 0;
                         transition: .5s;
                         color: $midnight;
                     }// h1

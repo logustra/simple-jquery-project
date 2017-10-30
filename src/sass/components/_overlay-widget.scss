@@ -2,6 +2,7 @@
     @include bgTintedImg('../images/overlay.jpg', center center, no-repeat, cover, rgba(0, 0, 0, 0.45));
 
     .container {
+        width: 40%;
         background: $white;
         padding: 50px;
         margin: 160px auto;

@@ -65,7 +65,7 @@
                 return true;
             } else {
                 $('.error').fadeIn('300', function() {
-                    $(this).fadeOut();
+                    $(this).delay(500).fadeOut();
                 });
             }
         }
@@ -75,7 +75,6 @@
             answer.each( function (index, current) {
                 if($(this).hasClass('active')) {
                     data.results.push($(this).text());
-                    console.log(data.results);
                 }
             });
         }

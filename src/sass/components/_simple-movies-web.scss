@@ -1,0 +1,118 @@
+.simple-movies-web {
+
+    h1 {
+        text-align: center;
+        font-family: $font2;
+        font-weight: bold;
+        letter-spacing: 4px;
+        background: $green;
+        margin: 0;
+        padding: 50px 0;
+        color: $white;
+    }// h1
+
+    .filter {
+
+        .btn-filter {
+            width: 100%;
+            border-radius: 0;
+            @include font-size(17px);
+            background: $white;
+            padding: 20px 0;
+
+            &:focus {
+                box-shadow: none;
+            }
+
+            i {
+                margin-right: 10px;
+            }
+        }// .btn-filter
+
+        .filter-collapse {
+            @include clearfix;
+            padding: 20px 0;
+            background: $smoke;
+
+            form {
+
+                select {
+
+                    &:focus {
+                        outline: none;
+                        box-shadow: none;
+                        border-color: $green;
+                    }// pseudoclass
+                }// select
+            }// form
+        }// .filter-collapse
+    }// .filter
+
+    .container {
+        margin: 50px auto;
+
+        .movie-item {
+            margin-top: 20px;
+            
+            .left {
+                position: relative;
+                float: left;
+                z-index: 100;
+                margin-right: 20px;
+            }// .left
+
+            .right {
+                position: relative;
+                border: 2px solid $green;
+                height: 268px;
+                font-weight: 300;
+                letter-spacing: 1px;
+                z-index: 50;
+
+                .title {
+                    border-bottom: 2px solid $green;
+                    margin-bottom: 20px;
+                    background: $green;
+                    color: $white;
+                    font-weight: bold;
+                    letter-spacing: 2px;
+
+                    h2 {
+                        margin: 0;
+                        padding: 10px 0 10px 20px;
+                        font-family: $font2;
+                        @include font-size(20px);
+                    }// h2
+                }// .title
+
+                .information {
+                    padding-left: 20px;
+                }// .information
+
+                .btn-description {
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    float: right;
+                    font-weight: bold;
+                    margin-top: 63px;
+                    background: $green;
+                    color: $white;
+                    border-radius: 0;
+                    border-top-left-radius: 10px;
+                    letter-spacing: 1.5px;
+                }// btn-description
+            }// .right
+
+            .description {
+                display: none;
+                width: 100%;
+                background: $green;
+                color: $white;
+                padding: 20px;
+                font-weight: 300;
+                letter-spacing: 1px;
+            }// .description
+        }// .movie-item
+    }// .contaier
+}// simple-movie-web

@@ -1,35 +1,41 @@
-$(document).ready(function () {
-
+(function () {
     var itemSlide = $('.images-slider-widget .container .slider ul li');
     var itemLength = itemSlide.length;
+    var itemHeight = itemSlide.find('img').height() + 'px';
     var slideIndex = 0;
 
-    itemSlide.each(function (index, current) {
-        var leftPercent = (100 * index) + '%';
-        $(this).css({
-            left: leftPercent
+    this.imagesSlider = function () {
+        itemSlide.each(function (index, current) {
+            var leftPercent = (100 * index) + '%';
+            $(this).css({
+                left: leftPercent
+            });
         });
-    });
-
-    $('.images-slider-widget .btn-next-slider').on('click', function () {
-        if (slideIndex < (itemLength - 1)) {
-            slideIndex = slideIndex + 1;
-            slide(slideIndex);
-        } else {
-            slideIndex = 0;
-            slide(slideIndex);
-        }
-    });
-
-    $('.images-slider-widget .btn-prev-slider').on('click', function () {
-        if (slideIndex > 0) {
-            slideIndex = slideIndex - 1;
-            slide(slideIndex);
-        } else {
-            slideIndex = itemLength - 1;
-            slide(slideIndex);
-        }
-    });
+    
+        $('.slider').css({
+            height: itemHeight
+        });
+    
+        $('.images-slider-widget .btn-next-slider').on('click', function () {
+            if (slideIndex < (itemLength - 1)) {
+                slideIndex = slideIndex + 1;
+                slide(slideIndex);
+            } else {
+                slideIndex = 0;
+                slide(slideIndex);
+            }
+        });
+    
+        $('.images-slider-widget .btn-prev-slider').on('click', function () {
+            if (slideIndex > 0) {
+                slideIndex = slideIndex - 1;
+                slide(slideIndex);
+            } else {
+                slideIndex = itemLength - 1;
+                slide(slideIndex);
+            }
+        });
+    };
 
     function slide(NewSlideIndex) {
         var left = (NewSlideIndex * (-100)) + '%';
@@ -41,13 +47,5 @@ $(document).ready(function () {
         slideIndex = NewSlideIndex;
     }
 
-    function changeBackground () {
-        var getSlideBackground = $('.images-slider-widget.active').attr('data-background');
-        $('body').css({
-            background: getSlideBackground,
-            'background-size': 'cover'
-        });
-    }
-
-    changeBackground();
-});
+    imagesSlider();
+})();

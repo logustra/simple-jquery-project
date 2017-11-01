@@ -90,3 +90,80 @@
         }// .error
     }// .container
 }// .simple-quiz-app
+
+/* Responsive */
+
+@include mq (xxsmall) {
+    .simple-quiz-app {
+    
+        .container {
+    
+            .item {
+    
+                .wrapper {
+                    width: 80%;
+                }// .wrapper
+            }// .item
+        }// .container
+    }// .simple-quiz-app
+}
+
+@include mq (xsmall) {
+    .simple-quiz-app {
+    
+        .container {
+    
+            .item {
+    
+                .wrapper {
+                    width: 70%;
+                }// .wrapper
+            }// .item
+        }// .container
+    }// .simple-quiz-app
+}
+
+@include mq (small) {
+    .simple-quiz-app {
+    
+        .container {
+    
+            .item {
+    
+                .wrapper {
+                    width: 50%;
+                }// .wrapper
+            }// .item
+        }// .container
+    }// .simple-quiz-app
+}
+
+@include mq (medium) {
+    .simple-quiz-app {
+    
+        .container {
+    
+            .item {
+    
+                .wrapper {
+                    width: 40%;
+                }// .wrapper
+            }// .item
+        }// .container
+    }// .simple-quiz-app
+}
+
+@include mq (large) {
+    .simple-quiz-app {
+    
+        .container {
+    
+            .item {
+    
+                .wrapper {
+                    width: 30%;
+                }// .wrapper
+            }// .item
+        }// .container
+    }// .simple-quiz-app
+}

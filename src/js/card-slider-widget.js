@@ -1,33 +1,36 @@
-$(document).ready(function () {
-    
+(function () {
     var itemSlide = $('.card-slider-widget .container .item').length;
     var slide = 1;
 
-    $('.totals-slide').text(itemSlide);
+    this.cardSlider = function () {
+        $('.totals-slide').text(itemSlide);
+        
+        $('.btn-next-slider').on('click', function () {
+            if (slide !== itemSlide ) {
+                slide = slide + 1;
+                nextSlider (slide);
+                changeBackground();
+            } else {
+                slide = 1;
+                nextSlider (slide);
+                changeBackground();
+            }
+        });
+    
+        $('.btn-prev-slider').on('click', function () {
+            if (slide > 1 ) {
+                slide = slide - 1;
+                prevSlider (slide);
+                changeBackground();
+            } else {
+                slide = itemSlide;
+                prevSlider (slide);
+                changeBackground();
+            }
+        });
 
-    $('.btn-next-slider').on('click', function () {
-        if (slide !== itemSlide ) {
-            slide = slide + 1;
-            nextSlider (slide);
-            changeBackground();
-        } else {
-            slide = 1;
-            nextSlider (slide);
-            changeBackground();
-        }
-    });
-
-    $('.btn-prev-slider').on('click', function () {
-        if (slide > 1 ) {
-            slide = slide - 1;
-            prevSlider (slide);
-            changeBackground();
-        } else {
-            slide = itemSlide;
-            prevSlider (slide);
-            changeBackground();
-        }
-    });
+        changeBackground();
+    };
 
     function nextSlider (slideNumber) {
         $('.card-slider-widget .container .item').removeClass('active');
@@ -61,5 +64,5 @@ $(document).ready(function () {
         });
     }
 
-    changeBackground();
-});
+    cardSlider();
+})();

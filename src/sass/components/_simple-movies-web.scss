@@ -117,3 +117,46 @@
         }// .movie-item
     }// .contaier
 }// simple-movie-web
+
+/* Responsive */
+
+@include mq (xxsmall) {
+    .simple-movies-web {
+
+        .container {
+            
+            .movie-item {
+                
+                .left {
+                    float: none;
+                    margin: 0;
+
+                    img {
+                        width: 100%;
+                        max-width: 450px;
+                    }
+                }// .left
+            }// .movie-item
+        }// .contaier    
+    }// simple-movie-web
+}
+
+@include mq (xsmall) {
+    .simple-movies-web {
+
+        .container {
+            
+            .movie-item {
+                
+                .left {
+                    float: left;
+                    margin-right: 20px;
+
+                    img {
+                        max-width: 100%;
+                    }
+                }// .left
+            }// .movie-item
+        }// .contaier    
+    }// simple-movie-web
+}

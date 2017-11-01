@@ -43,7 +43,7 @@
             display: none;
             
             .overlay-dialog {
-                width: 40%;
+                width: 50%;
                 background: $white;
                 border-radius: 10px;
                 margin: 50px auto 0 auto;
@@ -78,3 +78,97 @@
         }// .overlay
     }// .overlay-widget
 }// .overlay-widget
+
+/* Responsive */ 
+
+@include mq (xxsmall) {
+    .overlay-widget {
+    
+        .container {
+            width: 100%;
+    
+            .btn-overlay {
+    
+                .btn-success {
+                    margin-bottom: 15px;
+                }// .btn-success
+            }// .btn-overlay
+        }// .container
+    
+        .overlay-wrapper {
+    
+            .overlay {
+                
+                .overlay-dialog {
+                    width: 90%;
+        
+                }// .overlay-dialog
+            }// .overlay
+        }// .overlay-widget
+    }// .overlay-widget
+}
+
+@include mq (xsmall) {
+    .overlay-widget {
+    
+        .container {
+            width: 90%;
+    
+            .btn-overlay {
+    
+                .btn-success {
+                    margin-bottom: 0;
+                }// .btn-success
+            }// .btn-overlay
+        }// .container
+    }// .overlay-widget
+}
+
+@include mq (small) {
+    .overlay-widget {
+    
+        .container {
+            width: 55%;
+        }// .container
+
+        .overlay-wrapper {
+            
+            .overlay {
+                
+                .overlay-dialog {
+                    width: 70%;
+        
+                }// .overlay-dialog
+            }// .overlay
+        }// .overlay-widget
+    }// .overlay-widget
+}
+
+@include mq (medium) {
+    .overlay-widget {
+    
+        .container {
+            width: 45%;
+        }// .container
+
+        .overlay-wrapper {
+            
+            .overlay {
+                
+                .overlay-dialog {
+                    width: 50%;
+        
+                }// .overlay-dialog
+            }// .overlay
+        }// .overlay-widget
+    }// .overlay-widget
+}
+
+@include mq (large) {
+    .overlay-widget {
+    
+        .container {
+            width: 40%;
+        }// .container
+    }// .overlay-widget
+}

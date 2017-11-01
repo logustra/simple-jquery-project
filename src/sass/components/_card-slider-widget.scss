@@ -53,3 +53,95 @@
         }// .btn-sliders
     }// .container
 }// .card-slider-widget
+
+/* Responsive */
+
+@include mq (xxsmall) {
+    .card-slider-widget {
+        
+        .container {
+    
+            .item {
+    
+                .col-md-9 {
+                    
+                    h2 {
+                        margin-top: 20px;
+                        text-align: center;
+                    }
+                }// .columns
+            }// .item
+            
+    
+            .btn-card-slider {
+                padding: 20px 0;
+                text-align: center;
+    
+                .btn-success {
+                    margin-bottom: 15px;
+                }// .btn-success
+
+                .pull-right {
+                    float: none !important;
+                }
+            }// .btn-sliders
+        }// .container
+    }// .card-slider-widget
+}
+
+@include mq (xsmall) {
+    .card-slider-widget {
+        
+        .container {
+    
+            .btn-card-slider {
+                padding: 20px 0;
+                text-align: left;
+
+                .btn-success {
+                    margin-bottom: 0;
+                }
+    
+                .pull-right {
+                    float: right !important;
+                }
+            }// .btn-sliders
+        }// .container
+    }// .card-slider-widget
+}
+
+@include mq (medium) {
+    .card-slider-widget {
+        
+        .container {
+    
+            .item {
+    
+                .col-md-9 {
+                    
+                    h2 {
+                        margin-top: 0;
+                        text-align: left;
+                    }
+                }// .columns
+            }// .item
+            
+    
+            .btn-card-slider {
+                padding: 30px 0 30px 230px;
+                }// .btn-sliders
+        }// .container
+    }// .card-slider-widget
+}
+
+@include mq (large) {
+    .card-slider-widget {
+        
+        .container {
+    
+            .btn-card-slider {
+                padding: 30px 0 30px 275px;
+            }// .btn-sliders
+        }// .container
+    }// .card-slider-widget
+}

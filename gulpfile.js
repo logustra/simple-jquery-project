@@ -23,7 +23,6 @@ gulp.task("uglify", function (cb) {
 // automatic browser prefixing
 gulp.task("sass", function() {
 	return gulp.src("src/sass/**/*.scss")
-	.pipe(sourcemaps.init())
 	.pipe(sass({
 		outputStyle: "compressed"
 	}).on("error", sass.logError))

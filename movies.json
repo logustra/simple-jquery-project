@@ -1,0 +1,83 @@
+[
+    {
+        "id"            : 1,
+        "title"         : "Transformers",
+        "year"          : "2007", 
+        "type"          : "Action", 
+        "director"      : "Michael Bay",
+        "img"           : "1.jpg", 
+        "description"   : "High-school student Sam Witwicky buys his first car, who is actually the Autobot Bumblebee. Bumblebee defends Sam and his girlfriend Mikaela Banes from the Decepticon Barricade, before the other Autobots arrive on Earth. They are searching for the Allspark, and the war on Earth heats up as the Decepticons attack a United States military base in Qatar. Sam and Mikaela are taken by the top-secret agency Sector 7 to help stop the Decepticons, but when they learn the agency also intends to destroy the Autobots, they formulate their own plan to save the world."
+    },
+    {
+        "id"            : 2,
+        "title"         : "Armageddon",
+        "year"          : "1998", 
+        "type"          : "Adventure", 
+        "director"      : "Michael Bay",
+        "img"           : "2.jpg", 
+        "description"   : "A giant, global-killing asteriod, like the one that killed off the dinosaurs 65 million years ago is 18 days away from hitting the Earth. NASA's been caught with their pants down and needs a new plan to stop the rock. They enlist the help of Harry Stamper, an expert deep core driller, to train their astronauts and help them drill into the asteroid and plant a nuclear bomb. But Harry figures the astronauts can't be trained in time and opts to go with his own oil drilling crew."
+    },
+    {
+        "id"            : 3,
+        "title"         : "Pearl Harbor",
+        "year"          : "2001", 
+        "type"          : "History", 
+        "director"      : "Michael Bay",
+        "img"           : "3.jpg", 
+        "description"   : "High-school student Sam Witwicky buys his first car, who is actually the Autobot Bumblebee. Bumblebee defends Sam and his girlfriend Mikaela Banes from the Decepticon Barricade, before the other Autobots arrive on Earth. They are searching for the Allspark, and the war on Earth heats up as the Decepticons attack a United States military base in Qatar. Sam and Mikaela are taken by the top-secret agency Sector 7 to help stop the Decepticons, but when they learn the agency also intends to destroy the Autobots, they formulate their own plan to save the world."
+    },
+    {
+        "id"            : 4,
+        "title"         : "Live Free or Die Hard",
+        "year"          : "2007", 
+        "type"          : "Action", 
+        "director"      : "Len Wiseman",
+        "img"           : "4.jpg", 
+        "description"   : "When a criminal plot is in place to take down the entire computer and technological structure that supports the economy of the United States (and the world), it's up to a decidedly 'old school' hero, police detective John McClane, to take down the conspiracy, aided by a young hacker."
+    },
+    {
+        "id"            : 5,
+        "title"         : "A Good Day to Die Hard",
+        "year"          : "2013", 
+        "type"          : "Thriller", 
+        "director"      : "John Moore",
+        "img"           : "5.jpg", 
+        "description"   : "Iconoclastic, take-no-prisoners cop John McClane, for the first time, finds himself on foreign soil after traveling to Moscow to help his wayward son Jack - unaware that Jack is really a highly-trained CIA operative out to stop a nuclear weapons heist. With the Russian underworld in pursuit, and battling a countdown to war, the two McClanes discover that their opposing methods make them unstoppable heroes."
+    },
+    {
+        "id"            : 6,
+        "title"         : "Underworld",
+        "year"          : "2003", 
+        "type"          : "Thriller", 
+        "director"      : "Len Wiseman",
+        "img"           : "6.jpg", 
+        "description"   : "A war has been raging between the Vampires and Lycan for centuries, Selene (Beckinsale) is a death dealer, assigned to hunt down and eradicate the last of the Lycan. When she comes across Michael Corvin (Speedman) who holds the key to end the war she must decide where her allegiances will lie."
+    },
+    {
+        "id"            : 7,
+        "title"         : "Iron Man",
+        "year"          : "2008", 
+        "type"          : "Adventure", 
+        "director"      : "Jon Favreau",
+        "img"           : "7.jpg", 
+        "description"   : "Tony Stark. Genius, billionaire, playboy, philanthropist. Son of legendary inventor and weapons contractor Howard Stark. When Tony Stark is assigned to give a weapons presentation to an Iraqi unit led by Lt. Col. James Rhodes, he's given a ride on enemy lines. That ride ends badly when Stark's Humvee that he's riding in is attacked by enemy combatants. He survives - barely - with a chest full of shrapnel and a car battery attached to his heart. In order to survive he comes up with a way to miniaturize the battery and figures out that the battery can power something else. Thus Iron Man is born. He uses the primitive device to escape from the cave in Iraq. Once back home, he then begins work on perfecting the Iron Man suit. But the man who was put in charge of Stark Industries has plans of his own to take over Tony's technology for other matters."
+    },
+    {
+        "id"            : 8,
+        "title"         : "Iron Man 2",
+        "year"          : "2010", 
+        "type"          : "Sci-Fi", 
+        "director"      : "Jon Favreau",
+        "img"           : "8.jpg", 
+        "description"   : "With the world now aware of his dual life as the armored superhero Iron Man, billionaire inventor Tony Stark faces pressure from the government, the press, and the public to share his technology with the military. Unwilling to let go of his invention, Stark, along with Pepper Potts, and James 'Rhodey' Rhodes at his side, must forge new alliances - and confront powerful enemies."
+    },
+    {
+        "id"            : 9,
+        "title"         : "Iron Man 3",
+        "year"          : "2013", 
+        "type"          : "Sci-Fi", 
+        "director"      : "Shane Black",
+        "img"           : "9.jpg", 
+        "description"   : "Marvel's 'Iron Man 3' pits brash-but-brilliant industrialist Tony Stark/Iron Man against an enemy whose reach knows no bounds. When Stark finds his personal world destroyed at his enemy's hands, he embarks on a harrowing quest to find those responsible. This journey, at every turn, will test his mettle. With his back against the wall, Stark is left to survive by his own devices, relying on his ingenuity and instincts to protect those closest to him. As he fights his way back, Stark discovers the answer to the question that has secretly haunted him: does the man make the suit or does the suit make the man?"
+    }
+]

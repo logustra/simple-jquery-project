@@ -7,7 +7,7 @@
         letter-spacing: 4px;
         background: $green;
         margin: 0;
-        padding: 50px 0;
+        padding: 50px 20px;
         color: $white;
     }// h1
 
@@ -33,6 +33,7 @@
             @include clearfix;
             padding: 20px 0;
             background: $smoke;
+            display: none;
 
             form {
 
